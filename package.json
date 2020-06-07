@@ -1,9 +1,22 @@
 {
   "name": "@unifire/preact",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Preact bindings for Unifire",
-  "main": "index.js",
+  "main": "dist/unifire-preact.js",
+  "module": "dist/unifire-preact.module.js",
+  "umd:main": "dist/unifire-preact.umd.js",
+  "unpkg": "dist/unifire-preact.umd.js",
+  "source": "index.js",
+  "exports": {
+    ".": {
+      "browser": "./dist/unifire-preact.module.js",
+      "umd": "./dist/unifire-preact.umd.js",
+      "import": "./dist/unifire-preact.modern.js",
+      "require": "./dist/unifire-preact.js"
+    }
+  },
   "scripts": {
+    "build": "microbundle ",
     "test": "jest --coverage",
     "test:watch": "jest --watchAll"
   },
