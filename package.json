@@ -1,7 +1,7 @@
 {
   "name": "@unifire/preact",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Preact bindings for Unifire",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
@@ -25,7 +25,9 @@
     "enzyme-adapter-preact-pure": "^2.2.0",
     "jest": "^26.0.1",
     "microbundle": "^0.12.0",
-    "preact": "^10.4.4",
-    "unifire": "^0.2.0"
+    "preact": "^10.4.4"
+  },
+  "dependencies": {
+    "unifire": "^0.3.0"
   }
 }
