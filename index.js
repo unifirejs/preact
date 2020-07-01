@@ -48,8 +48,8 @@ function resolveArgs (store, component) {
 // However, it does require that state be accessed via a prop called `state` rather than spreading the desired values onto `props`.
 // This comes with the side-effect of allowing users to directly manipulate state within components.
 export const Observer = (...args) => {
+  const [ store, component ] = resolveArgs(...args);
   return forwardRef((props, ref) => {
-    const [ store, component ] = resolveArgs(...args);
     const render = useState();
     const subscriber = component.prototype && component.prototype.render
       ? (new component()).render

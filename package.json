@@ -1,6 +1,6 @@
 {
   "name": "@unifire/preact",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Preact bindings for Unifire",
   "main": "dist/unifire-preact.js",
   "module": "dist/unifire-preact.module.js",
