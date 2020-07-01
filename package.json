@@ -1,6 +1,6 @@
 {
   "name": "@unifire/preact",
-  "version": "0.4.4",
+  "version": "0.4.9",
   "description": "Preact bindings for Unifire",
   "main": "dist/unifire-preact.js",
   "module": "dist/unifire-preact.module.js",
@@ -31,6 +31,10 @@
     }
   },
   "devDependencies": {
+
+  },
+  "dependencies": {
+    "unifire": "^0.3.0",
     "babel-jest": "^26.0.1",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.7.0",
@@ -39,8 +43,5 @@
     "jest": "^26.0.1",
     "microbundle": "^0.12.0",
     "preact": "^10.4.4"
-  },
-  "dependencies": {
-    "unifire": "^0.3.0"
   }
 }
