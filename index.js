@@ -60,7 +60,7 @@ export const Observer = (...args) => {
         deps.add(prop);
         return obj[prop];
       }
-    })
+    });
     const output = subscriber({ ...props, ref, state, fire: store.fire });
     const unsubscribe = store.subscribe(Array.from(deps), () => render[1]({}));
     useEffect(() => () => unsubscribe(), [ unsubscribe ]);
